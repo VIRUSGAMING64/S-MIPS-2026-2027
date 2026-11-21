@@ -55,7 +55,7 @@
   </toolbar>
   <circuit name="Board">
     <a name="circuit" val="Board"/>
-    <a name="simulationFrequency" val="256.0"/>
+    <a name="simulationFrequency" val="8000.0"/>
     <comp lib="0" loc="(120,160)" name="Clock">
       <a name="appearance" val="classic"/>
       <a name="label" val="Reloj"/>
@@ -704,9 +704,9 @@
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="No cambiar nombres, anchos ni sentido de los pines: la placa depende de ellos."/>
     </comp>
-    <comp loc="(1520,140)" name="IDecoder"/>
-    <comp loc="(1520,670)" name="BranchControl"/>
-    <comp loc="(880,140)" name="Data_Path"/>
+    <comp loc="(1520,140)" name="Instruction_Decoder"/>
+    <comp loc="(1520,670)" name="Branch_Control"/>
+    <comp loc="(880,140)" name="Datapath"/>
     <comp loc="(880,670)" name="ControlUnit"/>
     <wire from="(1210,690)" to="(1300,690)"/>
     <wire from="(1230,730)" to="(1300,730)"/>
@@ -1067,9 +1067,9 @@
     <wire from="(870,140)" to="(900,140)"/>
     <wire from="(990,430)" to="(1010,430)"/>
   </circuit>
-  <circuit name="RegisterFile">
+  <circuit name="Register_File">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="RegisterFile"/>
+    <a name="circuit" val="Register_File"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <appear>
@@ -3319,9 +3319,9 @@
     <wire from="(880,70)" to="(890,70)"/>
     <wire from="(910,480)" to="(940,480)"/>
   </circuit>
-  <circuit name="BranchControl">
+  <circuit name="Branch_Control">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="BranchControl"/>
+    <a name="circuit" val="Branch_Control"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <appear>
@@ -3446,9 +3446,9 @@
     <wire from="(460,390)" to="(510,390)"/>
     <wire from="(500,430)" to="(510,430)"/>
   </circuit>
-  <circuit name="IDecoder">
+  <circuit name="Instruction_Decoder">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="IDecoder"/>
+    <a name="circuit" val="Instruction_Decoder"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <appear>
@@ -5471,9 +5471,9 @@
     <wire from="(620,940)" to="(630,940)"/>
     <wire from="(620,980)" to="(630,980)"/>
   </circuit>
-  <circuit name="Data_Path">
+  <circuit name="Datapath">
     <a name="appearance" val="logisim_evolution"/>
-    <a name="circuit" val="Data_Path"/>
+    <a name="circuit" val="Datapath"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
     <appear>
@@ -6680,7 +6680,7 @@
       <a name="text" val="Memory Interface"/>
     </comp>
     <comp loc="(1140,1020)" name="ALU"/>
-    <comp loc="(1260,570)" name="RegisterFile"/>
+    <comp loc="(1260,570)" name="Register_File"/>
     <comp loc="(1760,1400)" name="Extender5B"/>
     <comp loc="(1830,1700)" name="Extender16B"/>
     <comp loc="(1870,1030)" name="MemoryInterface"/>
